@@ -5,9 +5,8 @@ Related papers for multi-agent reforcement learning.
 
 ## 2021.8.9-2021.8.15
 
-- [Provable Representation Learning for Imitation with Contrastive Fourier Features](https://arxiv.org/pdf/2105.12272.pdf)  
+- [Multi-Agent Coordination in Adversarial Environments through Signal Mediated Strategies](https://arxiv.org/pdf/2102.05026.pdf)  
 
-  **提出用contrastive learning**方法从offline dataset表征state，可以证明在使用该方法优化表征state的函数和强化学习过程时，等价于将学习的policy与收集offline dataset的target policy的距离的upper bound降低，不需要考虑target policy表征的形式，理论上可以将error降到0。相较Behavior Cloning方法（Bisimulation-based）性能大幅提升，实验在tabular case和Atari2600上训练的DQN均做了实验。（learning dynamic and reward）BC对target policy采集数据的形式有限制，且由于数据未全覆盖且空间大sample efficiency比较低  
+  设计了two-player中心化采样缓冲池（该buffer可以利用彼此的动作进行训练），设计了信号中介策略框架（每个agent的策略在每个episode开始前condition on一个信号，该信号表征多智能体策略之间的均衡）  
   
-- [Pretraining Representations for Data-Efficient
-Reinforcement Learning](https://arxiv.org/pdf/2106.04799.pdf)  
+- [Signal Instructed Coordination in Cooperative Multi-agent Reinforcement Learning](https://arxiv.org/pdf/1909.04224.pdf)  
